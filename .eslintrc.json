@@ -1,0 +1,17 @@
+{
+	"parser": "babel-eslint",
+	"ecmaFeatures": {
+		"jsx": true,
+		"arrowFunctions": true,
+		"classes": true,
+		"modules": true,
+		"spread": true
+	},
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"plugins": [
+		"react"
+	]
+}
