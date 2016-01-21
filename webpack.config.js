@@ -21,12 +21,24 @@ const common = {
 		new HtmlwebpackPlugin({
 			title: 'Kanban app'
 		})
-	]
+	],
+	module: {
+		loaders: [
+			{
+				// Test expects a RegExp! Note the slashes!
+				test: /\.css$/,
+				loaders: ['style','css'],
+				// Include accepts either a path or an array of paths
+				include: PATHS.app
+			}
+		]
+	}
 }
 
 // Default configuration
 if (TARGET === 'start' || !TARGET) {
 	module.exports = merge(common, {
+		devTool: 'eval-source-map',
 	    devServer: {
 			contentBase: PATHS.build,
 
