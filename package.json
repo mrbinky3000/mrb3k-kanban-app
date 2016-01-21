@@ -1,12 +1,21 @@
 {
   "name": "kanban_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Just me going through a tutorial on how to use Webpack with ReactJs.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
+  "repository": "https://github.com/mrbinky3000/mrb3k-kanban-app",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.7.1",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.7.3"
+  }
 }
